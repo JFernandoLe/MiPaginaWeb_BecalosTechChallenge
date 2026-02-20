@@ -3,14 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Proyecto Final | HTML Semántico</title>
+    <title>Proyecto Final | Desarrollo Web</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <header>
-        <h1>Bienvenidos a mi Sitio Web</h1>
-        <nav>
-            <ul>
+        <nav class="navbar">
+            <div class="logo">MiPortafolio</div>
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
                 <li><a href="#sobre-mi">Sobre mí</a></li>
                 <li><a href="#proyectos">Proyectos</a></li>
                 <li><a href="#contacto">Contacto</a></li>
@@ -19,35 +21,48 @@
     </header>
 
     <main>
-        <section id="sobre-mi">
-            <h2>Sobre el Proyecto</h2>
-            <p>Esta página ha sido creada como parte de mi formación en desarrollo web, utilizando etiquetas semánticas de HTML5 para una mejor organización y accesibilidad.</p>
-            <img src="https://via.placeholder.com/400x200" alt="Imagen representativa del proyecto">
+        <section id="inicio" class="hero">
+            <h1>Bienvenido a mi Proyecto Final</h1>
+            <p>Explora los fundamentos de HTML5, CSS3 y JavaScript en un solo lugar.</p>
+            <img src="https://picsum.photos/800/400" alt="Banner de tecnología" class="main-img">
         </section>
 
-        <section id="proyectos">
-            <h2>Tecnologías Utilizadas</h2>
-            <ol>
-                <li>HTML5 para la estructura.</li>
-                <li>Git para el control de versiones.</li>
-                <li>GitHub Pages para el despliegue.</li>
-            </ol>
+        <section id="sobre-mi">
+            <h2>Jerarquía de Información</h2>
+            <p>Utilizar etiquetas semánticas mejora el SEO y la lectura de pantalla para personas con discapacidad visual.</p>
+            <div class="info-grid">
+                <article>
+                    <h3>Organización</h3>
+                    <p>Uso de <code>header</code>, <code>main</code> y <code>section</code>.</p>
+                </article>
+                <article>
+                    <h3>Estilo</h3>
+                    <p>Diseño responsivo que se adapta a móviles y computadoras.</p>
+                </article>
+            </div>
         </section>
 
         <section id="contacto">
-            <h2>Contacto</h2>
-            <p>Puedes conocer más de mi trabajo visitando mi perfil de <a href="https://github.com">GitHub</a>.</p>
-            <form action="#">
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre" required>
-                <input type="submit" value="Enviar">
+            <h2>Contáctame</h2>
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre..." required>
+                </div>
+                <div class="form-group">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="4"></textarea>
+                </div>
+                <button type="submit" id="btnEnviar">Enviar Mensaje</button>
             </form>
+            <p id="formFeedback" class="hidden">¡Gracias por tu mensaje! (Simulación de envío)</p>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2026 - Proyecto Final de Desarrollo Web</p>
+        <p>&copy; 2026 - Creado por Juan Fernando | Proyecto Académico</p>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 </html>
