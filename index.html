@@ -3,18 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proyecto Final | Desarrollo Web</title>
+    <title>Juan Fernando | Portfolio ESCOM</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
 
     <header>
         <nav class="navbar">
-            <div class="logo">MiPortafolio</div>
+            <div class="logo">JF<span>Dev</span></div>
             <ul class="nav-links">
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#sobre-mi">Sobre mí</a></li>
-                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="index.html" class="active">Inicio</a></li>
+                <li><a href="curriculum.html">CV</a></li>
+                <li><a href="proyectos.html">Proyectos</a></li>
                 <li><a href="#contacto">Contacto</a></li>
             </ul>
         </nav>
@@ -22,45 +23,57 @@
 
     <main>
         <section id="inicio" class="hero">
-            <h1>Bienvenido a mi Proyecto Final</h1>
-            <p>Explora los fundamentos de HTML5, CSS3 y JavaScript en un solo lugar.</p>
-            <img src="https://picsum.photos/800/400" alt="Banner de tecnología" class="main-img">
+            <h1>Juan Fernando</h1>
+            <p>Ingeniero en Sistemas Computacionales | <strong>ESCOM - IPN</strong></p>
+            <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=800&q=80" alt="Programación" class="main-img">
         </section>
 
         <section id="sobre-mi">
-            <h2>Jerarquía de Información</h2>
-            <p>Utilizar etiquetas semánticas mejora el SEO y la lectura de pantalla para personas con discapacidad visual.</p>
+            <h2>Perfil Profesional</h2>
+            <p>Estudiante de último año enfocado en el desarrollo de soluciones tecnológicas innovadoras, desde sistemas de gestión hasta entornos de Realidad Virtual.</p>
             <div class="info-grid">
                 <article>
-                    <h3>Organización</h3>
-                    <p>Uso de <code>header</code>, <code>main</code> y <code>section</code>.</p>
+                    <i class="fas fa-university"></i>
+                    <h3>Educación</h3>
+                    <p>Formación académica en la Escuela Superior de Cómputo.</p>
+                    <a href="curriculum.html" class="btn-link">Ver CV completo</a>
                 </article>
                 <article>
-                    <h3>Estilo</h3>
-                    <p>Diseño responsivo que se adapta a móviles y computadoras.</p>
+                    <i class="fas fa-laptop-code"></i>
+                    <h3>Experiencia</h3>
+                    <p>Desarrollo de sistemas POS y aplicaciones móviles.</p>
+                    <a href="proyectos.html" class="btn-link">Explorar proyectos</a>
                 </article>
             </div>
         </section>
 
         <section id="contacto">
-            <h2>Contáctame</h2>
+            <h2>Hablemos</h2>
             <form id="contactForm">
                 <div class="form-group">
                     <label for="nombre">Nombre:</label>
-                    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre..." required>
+                    <input type="text" id="nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="nombre">Apellido:</label>
+                    <input type="text" id="nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="nombre">Correo:</label>
+                    <input type="email" id="nombre" required>
                 </div>
                 <div class="form-group">
                     <label for="mensaje">Mensaje:</label>
-                    <textarea id="mensaje" name="mensaje" rows="4"></textarea>
+                    <textarea id="mensaje" rows="4"></textarea>
                 </div>
-                <button type="submit" id="btnEnviar">Enviar Mensaje</button>
+                <button type="submit">Enviar Mensaje</button>
             </form>
-            <p id="formFeedback" class="hidden">¡Gracias por tu mensaje! (Simulación de envío)</p>
+            <p id="formFeedback" class="hidden">¡Mensaje enviado!</p>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2026 - Creado por Juan Fernando | Proyecto Académico</p>
+        <p>&copy; 2026 - Juan Fernando | Proyecto Final Web</p>
     </footer>
 
     <script src="script.js"></script>
