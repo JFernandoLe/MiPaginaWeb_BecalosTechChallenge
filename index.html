@@ -1,16 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Mi Proyecto Final | HTML Semántico</title>
 </head>
 <body>
+
+    <header>
+        <h1>Bienvenidos a mi Sitio Web</h1>
+        <nav>
+            <ul>
+                <li><a href="#sobre-mi">Sobre mí</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
     <main>
-        <section>
-            <h1>Mi Página Web</h1>
-            <p>Por: <span>Juan Fernando Leon Medellin</span></p>
+        <section id="sobre-mi">
+            <h2>Sobre el Proyecto</h2>
+            <p>Esta página ha sido creada como parte de mi formación en desarrollo web, utilizando etiquetas semánticas de HTML5 para una mejor organización y accesibilidad.</p>
+            <img src="https://via.placeholder.com/400x200" alt="Imagen representativa del proyecto">
+        </section>
+
+        <section id="proyectos">
+            <h2>Tecnologías Utilizadas</h2>
+            <ol>
+                <li>HTML5 para la estructura.</li>
+                <li>Git para el control de versiones.</li>
+                <li>GitHub Pages para el despliegue.</li>
+            </ol>
+        </section>
+
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <p>Puedes conocer más de mi trabajo visitando mi perfil de <a href="https://github.com">GitHub</a>.</p>
+            <form action="#">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                <input type="submit" value="Enviar">
+            </form>
         </section>
     </main>
+
+    <footer>
+        <p>&copy; 2026 - Proyecto Final de Desarrollo Web</p>
+    </footer>
+
 </body>
 </html>
